@@ -25,7 +25,7 @@ class CountdownTimer {
     }, 1000)
   }
 }
-const timer = new CountdownTimer('#timer-1', '04, 9, 2021');
+const timer = new CountdownTimer('#timer-1', '04, 20, 2021');
 timer.createTimer();
 // const timer2 = new CountdownTimer('#timer-2', '04, 9, 2022');
 // timer2.createTimer();
