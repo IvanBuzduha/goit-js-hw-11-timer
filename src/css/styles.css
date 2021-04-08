@@ -33,28 +33,26 @@ body {
   padding: 10px;
   border-radius: 5px;
   background: rgb(158 171 168 / 73%);
-  display: inline-block;
+  display: block;
 }
-.field:nth-child(n + 2):nth-child(-n + 3):before {
+.field:nth-child(n + 2):nth-child(-n + 3):before,
+.field:nth-child(n + 2):nth-child(-n + 3):after {
   content: '';
   position: absolute;
   bottom: 40px;
-  left: 85px;
+  left: 103%;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #1b1a1acf;
 }
 .field:nth-child(n + 2):nth-child(-n + 3):after {
-  content: '';
-  position: absolute;
   bottom: 65px;
-  left: 85px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #1b1a1acf;
 }
 .field:not(:first-child) {
   margin-left: 15px;
+}
+#timer-1 {
+  display: flex;
+  justify-content: center;
 }
